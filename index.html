@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+    <h2>Boka bord</h2>
+    <div class="container">
+      <form action="https://httpbin.org/anything" method="post">
+        <div class="firstName">
+          <label for="Förnamn">Förnamn</label>
+          <input id="firstName" name="firstName" type="text" />
+        </div>
+        <div class="lastName">
+          <label for="lastName">Efternamn</label>
+          <input id="lastName" name="lastName" type="text" />
+        </div>
+        <div class="password">
+          <label for="password">Lösenord</label>
+          <input id="password" name="password" type="password" />
+        </div>
+        <div class="email">
+          <label for="email">E-post</label>
+          <input id="email" name="email" type="email" />
+        </div>
+        <div class="message">
+          <label for="msg">Meddelande</label>
+          <textarea id="msg" name="message"></textarea>
+        </div>
+        <div class="antal">
+          <label for="antal">Antal personer</label>
+          <select name="antal" id="antal">
+            <option value="choose">Välj antal personer</option>
+            <option value="1pers">1 pers</option>
+            <option value="2pers">2 pers</option>
+            <option value="3pers">3 pers</option>
+            <option value="4pers">4 pers</option>
+          </select>
+        </div>
+        <fieldset>
+            <legend>Vänligen välj din placering</legend>
+            <label
+              ><input
+                id="inne"
+                type="radio"
+                name="inne-ute"
+                value="inne"
+                checked
+              />
+              Inne</label
+            >
+            <label
+              ><input
+                id="ute"
+                type="radio"
+                name="inne-ute"
+                value="ute"
+              />
+              Ute</label
+            >
+          </fieldset>
+          
+        </form>
+      </section>
+        <div class="send">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+</main>
+  </body>
+</html>
